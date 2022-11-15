@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main () {
+    int a;
+    printf("Masukkan Angka : ");
+    scanf("%d", &a);
+    if (a % 2 == 1) {
+            printf("Angka %d adalah bilangan ganjil", a);
+    } else {
+        printf("Angka %d adalah bilangan genap", a);
+    }
+}
