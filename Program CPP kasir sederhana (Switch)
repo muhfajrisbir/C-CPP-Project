@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+main () {
+    int hargapensil, pensil, hargapulpen, pulpen, hargabuku, buku, total, diskon, pajak, grandtotal, afterdiskon, pil;
+
+    cout<<"Masukkan Jumlah Pembelian : "<<endl;
+    cout<<"Pulpen \t: ";
+    cin>>pulpen;
+    cout<<"Pensil \t: ";
+    cin>>pensil;
+    cout<<"Buku \t: " ;
+    cin>>buku;
+    cout<<endl;
+    hargapulpen = 5000*pulpen;
+    hargapensil = 3000*pensil;
+    hargabuku = 15000*buku;
+    total = hargapulpen+hargapensil+hargabuku;
+
+    cout<<"Detail Pembelian \t:"<<endl;
+    cout<<pulpen<<" Pulpen \t: Rp"<<hargapulpen<<endl;
+    cout<<pensil<<" Pensil \t: Rp"<<hargapensil<<endl;
+    cout<<buku<<" Buku \t\t: Rp"<<hargabuku<<endl;
+    cout<<"---------------------------"<<endl;
+    cout<<"Total \t\t: Rp"<<total<<endl;
+    cout<<"---------------------------"<<endl;
+
+    switch (buku) {
+
+    case 0:
+     diskon = 0;
+     cout<<"Diskon \t\t: Rp"<<diskon<<endl;
+     break;
+
+    default:
+    diskon = (15*total)/100;
+    cout<<"Diskon \t\t: Rp"<<diskon<<endl;
+
+    }
+    afterdiskon = total-diskon;
+    pajak = (afterdiskon*10)/100;
+    grandtotal = afterdiskon + pajak;
+
+
+    cout<<"Pajak \t\t: Rp"<<pajak<<endl;
+    cout<<"---------------------------"<<endl;
+    cout<<"Grand Total \t: Rp"<<grandtotal;
+    cout<<endl;
+
+}
