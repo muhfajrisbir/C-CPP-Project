@@ -1,0 +1,111 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+    int pilihan, persegi, sisipersegi, hslsisipersegi, kllhpersegi, panjang, lebar, luaspsgpanjang,
+    psgpanjang, kllpanjang, jarijari, lingkaran;
+    double luaslingkarang, kellingkaran;
+
+    cout<<"Hitung Luas dan Keliling Bangun Datar"<<endl;
+    cout<<"====================================="<<endl;
+    cout<<endl;
+    cout<<"1. Persegi \n2. Persegi Panjang \n3. Lingkaran"<<endl;
+    cout<<"Masukkan Pilihan[1..3] : "; cin>>pilihan;
+    system ("cls");
+
+    switch (pilihan) {
+        case 1 :
+            cout<<"Bangun Datar Persegi"<<endl;
+            cout<<endl;
+
+            cout<<"Masukkan Ukuran sisi : "; cin>>sisipersegi;
+            cout<<endl;
+            cout<<"1. Hitung Luas \n2. Hitung Keliling \n3. Hitung Luas dan Keliling"<<endl;
+            cout<<"Masukkan Pilihan[1..3] : "; cin>>persegi;
+            cout<<endl;
+            hslsisipersegi = sisipersegi*sisipersegi;
+            kllhpersegi = 4*sisipersegi;
+
+            //PERSEGI TOP//
+
+            switch (persegi) {
+                case 1 :
+                    cout<<"Luas = "<<hslsisipersegi;
+                    break;
+                case 2 :
+                    cout<<"Keliling = "<<kllhpersegi;
+                    break;
+                case 3 :
+                    cout<<"Luas \t\t= "<<hslsisipersegi<<endl;
+                    cout<<"Keliling \t= "<<kllhpersegi;
+
+            }
+            break;
+
+            //PERSEGI BOTTOM//
+
+            //PERSEGI PANJANG TOP//
+
+                case 2 :
+            cout<<"Bangun Datar Persegi Panjang"<<endl;
+            cout<<endl;
+
+            cout<<"Masukkan Ukuran Panjang : "; cin>>panjang;
+            cout<<"Masukkan Ukuran Lebar : "; cin>>lebar;
+            cout<<endl;
+            cout<<"1. Hitung Luas \n2. Hitung Keliling \n3. Hitung Luas dan Keliling"<<endl;
+            cout<<"Masukkan Pilihan[1..3] : "; cin>>psgpanjang;
+            cout<<endl;
+            luaspsgpanjang = panjang*lebar;
+            kllpanjang =(2*panjang) + (2*lebar);
+
+            switch (psgpanjang) {
+                case 1 :
+                    cout<<"Luas = "<<luaspsgpanjang;
+                    break;
+                case 2 :
+                    cout<<"Keliling = "<<kllpanjang;
+                    break;
+                case 3 :
+                    cout<<"Luas \t\t= "<<luaspsgpanjang<<endl;
+                    cout<<"Keliling \t= "<<kllpanjang;
+
+
+            }
+            break;
+
+            //PERSEGI PANJANG BOTTOM//
+
+            //LINGKARAN TOP//
+
+             case 3 :
+            cout<<"Bangun Datar Linkaran"<<endl;
+            cout<<endl;
+
+            cout<<"Masukkan Ukuran Jari-Jari : "; cin>>jarijari;
+            cout<<endl;
+            cout<<"1. Hitung Luas \n2. Hitung Keliling \n3. Hitung Luas dan Keliling"<<endl;
+            cout<<"Masukkan Pilihan[1..3] : "; cin>>lingkaran;
+            cout<<endl;
+            luaslingkarang = 3.14*jarijari*jarijari;
+            kellingkaran = 2*3.14*jarijari;
+
+            switch (lingkaran) {
+                case 1 :
+                    cout<<"Luas = "<<luaslingkarang;
+                    break;
+                case 2 :
+                    cout<<"Keliling = "<<kellingkaran;
+                    break;
+                case 3 :
+                    cout<<"Luas \t\t= "<<luaslingkarang<<endl;
+                    cout<<"Keliling \t= "<<kellingkaran;
+
+
+            }
+            break;
+            //LINGKARAN BOTTOM//
+
+
+    }
+}
