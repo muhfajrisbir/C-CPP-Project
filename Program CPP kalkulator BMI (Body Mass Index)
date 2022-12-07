@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+
+float tinggi, berat, meter, bmi;
+
+cout<<"Masukkan tinggi badan (cm)\t:";
+cin>>tinggi;
+
+cout<<"Masukkan berat badan (kg)\t:";
+cin>>berat;
+cout<<endl;
+meter = tinggi/100;
+
+bmi = berat/(meter*meter);
+cout<<"Hasil :"<<endl;
+cout<<"BMI \t\t: "<<bmi<<endl;
+cout<<"Kategori \t:"<<" ";
+
+  if (bmi<18.5) {
+    cout<<"Berat Badan Kurang"<<endl;
+  }
+  else if (bmi >= 18.5 && bmi < 22.9) {
+    cout<<"Berat Badan Normal"<<endl;
+  }
+  else if (bmi >= 22,9 && bmi < 30){
+    cout<<"Berat Badan Berlebihan"<<endl;
+  }
+  else {
+    cout<<"Obesitas"<<endl;
+  }
+}
